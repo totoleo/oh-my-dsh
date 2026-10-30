@@ -34,7 +34,7 @@ jobs:
 
       - run: pnpm install --frozen-lockfile --ignore-scripts
 
-      - uses: changesets/action@v1
+      - uses: changesets/action@v2
         with:
           version: pnpm version-packages
           publish: pnpm release
