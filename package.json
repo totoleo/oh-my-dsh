@@ -1,0 +1,24 @@
+{
+  "name": "dsh-plugins",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.28.5",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/totoleo/oh-my-dsh.git"
+  },
+  "homepage": "https://github.com/totoleo/oh-my-dsh#readme",
+  "bugs": {
+    "url": "https://github.com/totoleo/oh-my-dsh/issues"
+  },
+  "scripts": {
+    "test": "pnpm -r --if-present run test",
+    "pack:check": "pnpm -r --if-present run pack:check",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.7"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Wish mode",
+    "description": "Wish mode: make a wish, then prove it. Altitude is pure dialogue, while depth, range and speed run plugin-managed goal iterations up to each level's ceiling, and every level must be confirmed by the user before the next one starts. The composer shows the current level and phase, exploration rounds, the workspace and the four-level progress."
+  }
+}

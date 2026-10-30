@@ -1,0 +1,3 @@
+- insert:
+    - id: wish-mode
+      name: '@totoleo/dsh-wish-mode'

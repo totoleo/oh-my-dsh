@@ -1,0 +1,7 @@
+node_modules/
+dist/*
+wishes/
+playground/
+*.tgz
+*.log
+.DS_Store

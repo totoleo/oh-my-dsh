@@ -1,0 +1,63 @@
+{
+  "name": "@totoleo/dsh-wish-mode",
+  "version": "2.1.0",
+  "description": "Wish mode for DeepSeek Harness — turn a wish into a verified plan through altitude, depth, range and speed, with plugin-managed goal exploration and per-level confirmation.",
+  "type": "module",
+  "license": "MIT",
+  "author": "totoleo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/totoleo/oh-my-dsh.git",
+    "directory": "plugins/wish-mode"
+  },
+  "homepage": "https://github.com/totoleo/oh-my-dsh/tree/master/plugins/wish-mode#readme",
+  "bugs": {
+    "url": "https://github.com/totoleo/oh-my-dsh/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "wish",
+    "requirement",
+    "goal",
+    "agent"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "docs/*.md",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node test/harness.mjs",
+    "pack:check": "npm pack --dry-run"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
